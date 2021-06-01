@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.13)
+project(khoj)
+set(CMAKE_CXX_STANDARD 17)
+set(SOURCES "logger.cc" "indexUtils.cc" "walkDir.cc" "indexer.cc" "khoj.cc")
+set(INCLUDES "./include/logger.hh" "./include/walkDir.hh" "./include/indexer.hh" "./includ/indexUtils.hh")
+add_executable(khoj ${SOURCES})
+include_directories(include)
